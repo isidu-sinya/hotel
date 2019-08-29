@@ -18,23 +18,20 @@
                 if ( have_posts() ) :
                    while ( have_posts() ) : the_post();
                  ?>
-                <article id="post-<?php the_ID(); ?>" <?php post_class('news'); ?>>
+                <article id="post-<?php the_ID(); ?>" <?php post_class('news'); ?>
                     <div class="text">
                         <div class="entryInfo">
                             <div class="categories">
                               <?php the_category(); ?>
-                                <ul>
-                                    <li><a href="#">お知らせ</a></li>
-                                </ul>
                             </div>
-                            <time datetime="<?php the time_('Y-m-d'); ?>"><?php the time('Y年m月d日(1)'); ?></time>
+                            <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y年m月d日(1)'); ?></time>
                         </div>
                         <h1><a href="single.html">お花見企画の予約を開始しました</a></h1>
                         <p>
                             今年も恒例のお花見企画を行います。4月11日（土）に当ホテルの中庭にて、お花見をしませんか？
                             毎年、多くのお客さまにご好評を頂いております。
                         </p>
-                        <p>[<a href="<?php echo get_template_directory_uri()?>/single.html">続きを読む</a>]</p>
+                        <p>[<a href="<?php echo get_template_directory_uri(); ?>/single.html">続きを読む</a>]</p>
                     </div>
                     <figure><a href="single.html"><img src="<?php echo get_template_directory_uri(); ?>/images/dummy/180x180-3.png" height="180" width="180" alt=""></a></figure>
                 </article><!-- /.news -->
