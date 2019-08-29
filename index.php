@@ -1,15 +1,4 @@
-    <?php get_header(); ?>
-
-    <div class="homeVisual"><span>石垣島でのんびりゆったりと。</span></div>
-
-    <nav class="globalNavi">
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ホテル紹介</a></li>
-            <li><a href="access.html">アクセス</a></li>
-            <li><a href="contact.html">お問い合わせ</a></li>
-        </ul>
-    </nav><!-- /.globalNavi -->
+<?php get_header(); ?>
     <div class="contentsWrap">
         <div class="mainContents">
 
