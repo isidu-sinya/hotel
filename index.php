@@ -13,6 +13,10 @@
 
             <section class="newsBlock block">
                 <h1 class="type-B"><span>新着情報</span></h1>
+                <?php
+                if ( have_posts() ) :
+                   while ( have_posts() ) : the_post();
+                 ?>
 
                 <article class="news">
                     <div class="text">
@@ -33,8 +37,12 @@
                     </div>
                     <figure><a href="single.html"><img src="<?php echo get_template_directory_uri(); ?>/images/dummy/180x180-3.png" height="180" width="180" alt=""></a></figure>
                 </article><!-- /.news -->
+                <?php
+              endwhile;
+            endif;
+                ?>
 
-                <article class="news">
+
                     <div class="text">
                         <div class="entryInfo">
                             <div class="categories">
@@ -52,9 +60,9 @@
                         <p>[<a href="single.html">続きを読む</a>]</p>
                     </div>
                     <figure><a href="single.html"><img src="<?php echo get_template_directory_uri(); ?>/images/dummy/180x180-2.png" height="180" width="180" alt=""></a></figure>
-                </article><!-- /.news -->
 
-                <article class="news">
+
+
                     <div class="text">
                         <div class="entryInfo">
                             <div class="categories">
@@ -72,7 +80,7 @@
                         <p>[<a href="single.html">続きを読む</a>]</p>
                     </div>
                     <figure><a href="single.html"><img src="<?php echo get_template_directory_uri(); ?>/images/dummy/180x180-1.png" height="180" width="180" alt=""></a></figure>
-                </article><!-- /.news -->
+
 
             </section><!-- /.newsBlock -->
 
