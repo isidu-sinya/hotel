@@ -22,11 +22,12 @@
                     <div class="text">
                         <div class="entryInfo">
                             <div class="categories">
+                              <?php the_category(); ?>
                                 <ul>
                                     <li><a href="#">お知らせ</a></li>
                                 </ul>
                             </div>
-                            <time datetime="2015-03-22">2015.03.22(sun)</time>
+                            <time datetime="<?php the time_('Y-m-d'); ?>"><?php the time('Y年m月d日(1)'); ?></time>
                         </div>
                         <h1><a href="single.html">お花見企画の予約を開始しました</a></h1>
                         <p>
