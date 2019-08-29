@@ -33,11 +33,11 @@
                         </p>
                         <p>[<a href="<?php echo get_template_directory_uri(); ?>/single.html">続きを読む</a>]</p>
                     </div>
-                    <figure><a href="single.html"><img src="<?php echo get_template_directory_uri(); ?>/images/dummy/180x180-3.png" height="180" width="180" alt=""></a></figure>
+                    <figure><a href="single.html"><img src="<?php echo get_template_directory_uri(); ?>">/images/dummy/180x180-3.png" height="180" width="180" alt=""></a></figure>
                 </article><!-- /.news -->
                 <?php
-              endwhile;
-            endif;
+                 endwhile;
+                 endif;
                 ?>
 
 
