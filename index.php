@@ -9,7 +9,7 @@
 <![endif]-->
 <title>unko</title>
 </head>
-<body class="home">
+<body <?php body_class(); ?>>
     <header class="globalHeader">
         <div class="inner">
             <h1><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/common/logo01.png" height="40" width="300" alt="ホテル・技評リゾート石垣島"></a></h1>
