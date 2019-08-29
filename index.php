@@ -1,4 +1,4 @@
-
+    <?php get_header(); ?>
 
     <div class="homeVisual"><span>石垣島でのんびりゆったりと。</span></div>
 
@@ -10,7 +10,6 @@
             <li><a href="contact.html">お問い合わせ</a></li>
         </ul>
     </nav><!-- /.globalNavi -->
- <?php get_header(); ?>
     <div class="contentsWrap">
         <div class="mainContents">
 
