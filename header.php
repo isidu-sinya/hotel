@@ -20,7 +20,7 @@ bloginfo('hanage');
  wp_enqueue_script('jquery');
  wp_head();
  ?>
- <script src="<?php echo get_template_directory_uri();?>/js/common/js"></script>
+ <script src="<?php echo get_template_directory_uri(); ?>/js/common.js"></script>
 </head>
 <body <?php body_class(); ?>>
     <header class="globalHeader">
