@@ -18,9 +18,9 @@ bloginfo('hanage');
 </title>
 <?php
  wp_enqueue_script('jquery');
- wp_enqueue_script('hotel-common', get_template_directory_uri() . '/js/common.js');
  wp_head();
  ?>
+ <script src="<?php echo get_template_directory_uri();?>/js/common/js"></script>
 </head>
 <body <?php body_class(); ?>>
     <header class="globalHeader">
