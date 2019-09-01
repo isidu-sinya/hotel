@@ -18,13 +18,13 @@
                 if ( have_posts() ) :
                    while ( have_posts() ) : the_post();
                  ?>
-                <article id="post-<?php the_ID(); ?>" <?php post_class('news'); ?>
+                <article id="post-<?php the_ID(); ?>" <?php post_class('news'); ?>>
                     <div class="text">
                         <div class="entryInfo">
                             <div class="categories">
                               <?php the_category(); ?>
                             </div>
-                            <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y年m月d日(1)'); ?></time>
+                            <time datetime="2015-03-22">2015.03.22(sun)</time>
                         </div>
                         <h1><a href="single.html">お花見企画の予約を開始しました</a></h1>
                         <p>
@@ -64,9 +64,7 @@
                     <div class="text">
                         <div class="entryInfo">
                             <div class="categories">
-                                <ul>
-                                    <li><a href="#">お知らせ</a></li>
-                                </ul>
+                                <?php the_category(); ?>
                             </div>
                             <time datetime="2015-01-02">2015.01.02(fri)</time>
                         </div>

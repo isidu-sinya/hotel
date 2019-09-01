@@ -19,8 +19,7 @@ bloginfo('hanage');
 </title>
 <?php
  wp_enqueue_script('jquery');
- wp_head();
- ?>
+ wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
     <header class="globalHeader">
