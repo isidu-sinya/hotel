@@ -24,7 +24,7 @@
                             <div class="categories">
                               <?php the_category(); ?>
                             </div>
-                            <time datetime="<?php the_time('Y-m-d'); ?>"><php the_time('Y年m月d日(1)'); ?></time>
+                            <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y年m月d日(1)'); ?></time>
                         </div>
                         <h1><a href="single.html">お花見企画の予約を開始しました</a></h1>
                         <p>

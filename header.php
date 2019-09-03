@@ -11,7 +11,6 @@
 <title><?php if ( !is_home() ){ wp_title(' - ', true, 'right'); } ?><?php bloginfo('name'); ?></title>
 <?php
  wp_enqueue_script('jquery');
- wp_enqueue_script('hotel-common', get_template_directory_uri() . '/js/common.js');
  wp_head();
  ?>
 </head>
