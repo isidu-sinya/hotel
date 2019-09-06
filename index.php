@@ -26,7 +26,7 @@
                             </div>
                             <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y年m月d日(l)'); ?></time>
                         </div>
-                        <h1><a href="single.html">お花見企画の予約を開始しました</a></h1>
+                        <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                         <p>
                             今年も恒例のお花見企画を行います。4月11日（土）に当ホテルの中庭にて、お花見をしませんか？
                             毎年、多くのお客さまにご好評を頂いております。
