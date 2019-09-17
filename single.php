@@ -1,4 +1,4 @@
-  <?php get_header(); ?>
+<?php get_header(); ?>
 
     <div class="contentsWrap">
         <div class="mainContents">
@@ -62,4 +62,4 @@
             </div><!-- /.wrapper -->
         </aside><!-- /.subContents -->
     </div><!-- /.contentsWrap -->
-  <?php get_footer(); ?>
+<?php get_footer(); ?>
