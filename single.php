@@ -6,20 +6,19 @@
           if ( have_posts() ) :
               while ( have_posts() ) : the_post();
            ?>
-            <article id="post-1" class="entry">
+            <article id="post-<?php the_ID(); ?>" <?php post_class('entry'); ?>>
                 <h1 class="type-A">新着情報</h1>
-                <h2 class="title type-B"><span>お花見企画の予約を開始しました</span></h2>
+                <h2 class="title type-B"><span><?php the_title(); ?></span></h2>
 
                 <div class="entryInfo">
                     <div class="categories">
-                        <ul>
-                            <li>お知らせ</li>
-                        </ul>
+                        <?php the_category(); ?>
                     </div>
-                    <time datetime="2015-03-22">2015.03.22(sun)</time>
+                    <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y年m月d日(l)'); ?></time>
                 </div><!-- /.entryInfo -->
 
                 <section class="content">
+                  <?php the_content(); ?>
                     <h1>今年も恒例のお花見企画を行います。</h1>
                     <img src="images/dummy/670x260.png" height="260" width="670" alt="">
                     <p>当ホテルの中庭にてお花見をしませんか？<br>毎年、多くのお客さまにご好評を頂いております。</p>
