@@ -1,8 +1,11 @@
-
-    <?php get_header(); ?>
+  <?php get_header(); ?>
 
     <div class="contentsWrap">
         <div class="mainContents">
+          <?php
+          if ( have_posts() ) :
+              while ( have_posts() ) : the_post();
+           ?>
             <article id="post-1" class="entry">
                 <h1 class="type-A">新着情報</h1>
                 <h2 class="title type-B"><span>お花見企画の予約を開始しました</span></h2>
@@ -34,6 +37,10 @@
                     <span class="next"><a href="">ゴールデンウィークのご案内</a></span>
                 </nav>
             </article><!-- /.entry -->
+            <?php
+          endwhile;
+        endif;
+            ?>
         </div><!-- /.mainContents -->
 
         <aside class="subContents">
