@@ -44,6 +44,7 @@
 
         <aside class="subContents">
             <div class="wrapper">
+              <?php get_sidebar('categories'); ?>
                 <section class="recentCategories">
                     <h1 class="type-C">カテゴリー一覧</h1>
                     <ul class="categories">
