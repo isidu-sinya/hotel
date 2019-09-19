@@ -13,6 +13,7 @@
 
             <section class="newsBlock block">
                 <h1 class="type-B"><span>新着情報</span></h1>
+                <?php get_template_part('loop', 'main'); ?>
 
                 <?php
                 if ( have_posts() ) :
