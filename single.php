@@ -62,8 +62,13 @@
                 <section class="recentArchives">
                     <h1 class="type-C">月別アーカイブ</h1>
                     <ul class="archives">
-                        <li><a href="date.html">2015年2月</a>(2)</li>
-                        <li><a href="date.html">2015年1月</a>(1)</li>
+                    <?php
+                    $args = array(
+                      'type' => 'monthly',//月別を指定
+                      'show_post_count' => true,//投稿数を表示
+                    );
+                    wp_get_archives( $args );
+                    ?>
                     </ul><!-- /.archives -->
                 </section><!-- /.recentArchives -->
             </div><!-- /.wrapper -->
