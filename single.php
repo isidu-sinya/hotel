@@ -45,11 +45,17 @@
         <aside class="subContents">
             <div class="wrapper">
               <?php get_sidebar('categories'); ?>
+              <?php get_sidebar('archives'); ?>
                 <section class="recentCategories">
                     <h1 class="type-C">カテゴリー一覧</h1>
                     <ul class="categories">
-                        <li><a href="category.html">お知らせ</a>(10)</li>
-                        <li><a href="category.html">コラム</a>(5)</li>
+                    <?php
+                    $args = array(
+                      'title_li' =>'',//見出しを削除
+                      'show_count' => true,//投稿数を表示
+                    );
+                    wp_list_categories( $args );
+                    ?>
                     </ul>
                 </section><!-- /.recentCategories -->
 
